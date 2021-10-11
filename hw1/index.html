@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw1-gallery</title>
+    <link rel="stylesheet" type = "text/css" href="styles/style.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <a href ="#"><img src="images/logo.jpg" alt="PhotoCut logo" width="50" height="50"></a>
+    </header>
+
+    <section id="index-gallery" class="wrapper-gallery">
+        <div> <button onclick="filter(0)">all</button></div>
+        <div> <button onclick="filter(1)">gallery1</button></div>
+        <div> <button onclick="filter(2)">gallery2</button></div>
+
+        <div class="img-display">
+
+        </div>
+
+        <div class="img-preview img1 g1" >
+            <div><a href="#">Image 1</a></div>
+        </div>
+        <div class="img-preview img2 g1">
+            <div><a href="#">Image 2</a></div>
+        </div>
+        <div class="img-preview img3 g1">
+            <div><a href="#">Image 3</a></div>
+        </div>
+        <div class="img-preview img4 g2">
+            <div><a href="#">Image 4</a></div>
+        </div>
+        <div class="img-preview img5 g2">
+            <div><a href="#">Image 5</a></div>
+        </div>
+        <div class="img-preview img6 g1">
+            <div><a href="#">Image 6</a></div>
+        </div>
+        <div class="img-preview img7 g2">
+            <div><a href="#">Image 7</a></div>
+        </div>
+        <div class="img-preview img8 g1">
+            <div><a href="#">Image 8</a></div>
+        </div>
+        <div class="img-preview img9 g2">
+            <div><a href="#">Image 9</a></div>
+        </div>
+        <div class="img-preview img10 g1">
+            <div><a href="#">Image 10</a></div>
+        </div>
+        <div class="img-preview img11 g2">
+            <div><a href="#">Image 11</a></div>
+        </div>
+        <div class="img-preview img12 g2">
+            <div><a href="#">Image 12</a></div>
+        </div>
+    </section>
+
+    <script>
+        function filter(a){
+            var x, i, y;
+            x = document.querySelectorAll(".img-preview");
+            for(i=0;i<x.length;i++){
+                x[i].style.visibility = "hidden";
+            }
+            if(a==1){
+                y = document.querySelectorAll(".g1");
+                for(i=0;i<y.length;i++){
+                    y[i].style.visibility = "visible";
+                }
+            }
+            else if(a==2){
+                y = document.querySelectorAll(".g2");
+                for(i=0;i<y.length;i++){
+                    y[i].style.visibility = "visible";
+                }
+            }
+            else{
+                for(i=0;i<x.length;i++){
+                    x[i].style.visibility = "visible";
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
