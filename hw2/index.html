@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Photo Album</title>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="styles.css"
+  />
+</head>
+<body>
+  <input type="radio" name="Photos" id="check1" checked>
+  <input type="radio" name="Photos" id="check2">
+  <input type="radio" name="Photos" id="check3">
+  <input type="radio" name="Photos" id="check4">
+  <input type="radio" name="Photos" id="">
+<div class="container">
+  <h1>Photo Gallery</h1>
+  <div class="top-content">
+    <h3>Photo Gallery</h3>
+    <label for="check1" onclick="checkempty(0)">All Photos</label>
+    <label for="check2" onclick="checkempty(1)">Album1</label>
+    <label for="check3" onclick="checkempty(2)">Album2</label>
+    <label for="check4" onclick="checkempty(3)">Album3</label>
+    <label for="check5" onclick="checkempty(4)">Album4</label>
+  </div>
+
+  <div class="display"></div>
+    <div class="display-photo">
+      <img src="https://images.pexels.com/photos/4602/jumping-cute-playing-animals.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" id="display">
+    </div>
+  <div class="photo-gallery">
+    <div class="pic a1">
+      <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" id="a1">
+    </div>
+    <div class="pic a1">
+      <img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+    </div>
+    <div class="pic a2">
+      <img src="https://images.pexels.com/photos/320014/pexels-photo-320014.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+      id="a2">
+    </div>
+    <div class="pic a3">
+      <img src="https://images.pexels.com/photos/177809/pexels-photo-177809.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      id="a3">
+    </div>
+    <div class="pic a1">
+      <img src="https://images.pexels.com/photos/96428/pexels-photo-96428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+    </div>
+    <div class="pic a3">
+      <img src="https://images.pexels.com/photos/1643456/pexels-photo-1643456.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+    </div>
+    <div class="pic a2">
+      <img src="https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+    </div>
+    <div class="pic a3">
+      <img src="https://images.pexels.com/photos/2071873/pexels-photo-2071873.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+    </div>
+    <div class="pic a2">
+      <img src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+    </div>
+    <div class="pic a1">
+      <img src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+    </div>
+  </div>
+</div>
+  <section>
+
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
