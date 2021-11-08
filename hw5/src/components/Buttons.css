@@ -1,0 +1,35 @@
+.btn{
+    background: #333;
+    width: 110px;
+    height: 110px;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:45px;
+    cursor: pointer;
+    transition: filter 0.2s ease-in, background 0.5s ease-in-out;
+}
+.btn:active,
+.btn:focus{
+    filter: brightness(200%);
+}
+.btn.zero{
+    width: 250px;
+    grid-column: 1/span 2;
+    border-radius: 57.5px;
+    position: relative;
+    justify-content: flex-start;
+    padding-left: 43px;
+}
+.btn.function{
+    color: black;
+    background: #a5a5a5;
+}
+.btn.operator{
+    background: #f1a33c;
+}
+.btn.on{
+    color: #f1a33c;
+    background: white;
+}
